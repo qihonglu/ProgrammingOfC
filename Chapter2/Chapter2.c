@@ -11,7 +11,7 @@ int main()
 	int Sum(int x);
 	// 局部变量声明
 	int a, b, c, sum;
-	printf("请输入任意两个整数用逗号隔开，将会输出这两个数的和以及比较大的数\n");
+	printf("<第2章算法---程序的灵魂>\n\n");
 	scanf("%d, %d", &a, &b);
 	sum = a + b;
 	c = Max(a, b);
@@ -26,7 +26,7 @@ int main()
 }
 int Sum(int x) {
 	/* for 循环执行 */
-	for (int a = 0; a < x; a ++)
+	for (int a = 0; a < x; a++)
 	{
 		printf("a 的值： %d\n", a);
 	}
