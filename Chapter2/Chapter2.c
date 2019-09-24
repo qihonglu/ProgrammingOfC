@@ -2,34 +2,28 @@
 //
 
 #include <stdio.h>
-//#include<stdlib.h>
+#include<stdlib.h>
 //#include<windows.h>
 
 int main()
 {
 	// 函数声明
-	int Sum(int x);
-	// 局部变量声明
-	int a, b, c, sum;
-	printf("<第2章算法---程序的灵魂>\n\n");
-	scanf("%d, %d", &a, &b);
-	sum = a + b;
-	c = Max(a, b);
-	//标准输出信息(如std::cout、printf等)都是输出到控制台的(也就是传说中的黑窗)
-	printf("you input %d and %d\nTheir Sum is %d\n Max is %d\n", a, b, sum, c);
-	//将信息输出在调试器中
-	//OutputDebugString("this is a c program\n");
-	//暂停
-	//system("pause");
-	while (1);
-	//return 0;
+	int Factorial();
+	printf("<第2章算法---程序的灵魂>\n");
+	Factorial();
+	system("pause");
+	//while (1);
+	return 0;
 }
-int Sum(int x) {
+int Factorial() {
+	int x,t = 1;
+	printf("请输入一个大于1的整数,将输出这个数阶乘的值\n");
+	scanf("%d", &x);
 	/* for 循环执行 */
-	for (int a = 0; a < x; a++)
-	{
-		printf("a 的值： %d\n", a);
-	}
+	for (int i = 2; i <= x; i++){
 
-	return a;
+		t = t * i;
+	}
+	printf("you input %d\n%d! is %d\n",x,x,t);
+	return 0;
 }
