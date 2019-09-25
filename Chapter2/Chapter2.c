@@ -17,9 +17,9 @@ int main()
 }
 int Factorial() {
 	int x,t = 1;
-	printf("请输入一个大于1的整数,将输出这个数阶乘的值\n");
+	printf("当前为for循环\n请输入一个大于1的整数,将输出这个数阶乘的值\n");
 	scanf("%d", &x);
-	/* for 循环执行 */
+	//for 循环执行 
 	for (int i = 2; i <= x; i++){
 
 		t = t * i;
@@ -27,3 +27,17 @@ int Factorial() {
 	printf("you input %d\n%d! is %d\n",x,x,t);
 	return 0;
 }
+/*
+int Factorial() {
+	int x,t = 1, i = 2;
+	printf("当前为while循环\n请输入一个大于1的整数,将输出这个数阶乘的值\n");
+	scanf("%d", &x);
+	// while 循环执行
+	while (i <= x) {
+		t = t * i;
+		i++;
+	}
+	printf("you input %d\n%d! is %d\n", x, x, t);
+	return 0;
+}
+*/
