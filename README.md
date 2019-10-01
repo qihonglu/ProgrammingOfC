@@ -1,2 +1,4 @@
-# ProgrammingToC
- ProgrammingToC
+ProgrammingToC
+vs2017
+新建 -> 项目 -> vc++ -> 空项目
+在解决方案管理器中右击“源文件” -> 添加 -> 新建项 -> vc++ -> c++文件(把.cpp后缀改成.c)
