@@ -1,6 +1,7 @@
 // 第2章算法---程序的灵魂
 
 #include <stdio.h>
+//system("pause");
 #include<stdlib.h>
 //#include<windows.h>
 
@@ -21,7 +22,7 @@ int main()
 	return 0;
 }
 int Factorial() {
-	long x,t = 1;
+	int x,t = 1;
 	printf("当前为for循环\n请输入0-31整数,将输出这个数阶乘的值\n");
 	scanf("%d", &x);
 	//for 循环执行 
